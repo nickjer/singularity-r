@@ -1,6 +1,8 @@
 # Singularity R
 
-Singularity image for [R](https://www.r-project.org/).
+Singularity image for [R].
+
+[R]: https://www.r-project.org/
 
 This is still a work in progress.
 
@@ -74,5 +76,6 @@ https://github.com/nickjer/singularity-r.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT
-License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [MIT License].
+
+[MIT License]: http://opensource.org/licenses/MIT

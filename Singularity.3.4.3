@@ -42,5 +42,8 @@ From: ubuntu:16.04
     libssl-dev \
     libxml2-dev \
 
+  # Add a default CRAN mirror
+  echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')" >> /usr/lib/R/etc/Rprofile.site
+
   # Clean up
   rm -rf /var/lib/apt/lists/*

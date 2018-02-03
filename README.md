@@ -1,8 +1,9 @@
 # Singularity R
 
-Singularity image for [R].
+[![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/462)
+[![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-[R]: https://www.r-project.org/
+Singularity image for [R].
 
 This is still a work in progress.
 
@@ -78,4 +79,5 @@ https://github.com/nickjer/singularity-r.
 
 The code is available as open source under the terms of the [MIT License].
 
+[R]: https://www.r-project.org/
 [MIT License]: http://opensource.org/licenses/MIT

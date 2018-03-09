@@ -38,6 +38,7 @@ From: ubuntu:16.04
     r-base=${R_VERSION}* \
     r-base-dev=${R_VERSION}* \
     r-recommended=${R_VERSION}* \
+    r-doc-html=${R_VERSION}* \
     libcurl4-openssl-dev \
     libssl-dev \
     libxml2-dev \

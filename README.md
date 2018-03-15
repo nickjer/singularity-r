@@ -1,5 +1,6 @@
 # Singularity R
 
+[![Build Status](https://travis-ci.org/nickjer/singularity-r.svg?branch=master)](https://travis-ci.org/nickjer/singularity-r)
 [![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/462)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 

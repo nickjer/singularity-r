@@ -36,8 +36,10 @@ From: ubuntu:16.04
   apt-get update
   apt-get install -y --no-install-recommends \
     r-base=${R_VERSION}* \
+    r-base-core=${R_VERSION}* \
     r-base-dev=${R_VERSION}* \
     r-recommended=${R_VERSION}* \
+    r-base-html=${R_VERSION}* \
     r-doc-html=${R_VERSION}* \
     libcurl4-openssl-dev \
     libssl-dev \

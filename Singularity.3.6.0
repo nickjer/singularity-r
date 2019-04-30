@@ -3,7 +3,7 @@ From: ubuntu:16.04
 
 %labels
   Maintainer Jeremy Nicklas
-  R_Version 3.5.3
+  R_Version 3.6.0
 
 %apprun R
   exec R "${@}"

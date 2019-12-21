@@ -3,7 +3,7 @@ From: ubuntu:16.04
 
 %labels
   Maintainer Jeremy Nicklas
-  R_Version 3.6.1
+  R_Version 3.6.2
 
 %apprun R
   exec R "${@}"
@@ -16,7 +16,7 @@ From: ubuntu:16.04
 
 %post
   # Software versions
-  export R_VERSION=3.6.1
+  export R_VERSION=3.6.2
 
   # Get dependencies
   apt-get update
@@ -34,7 +34,7 @@ From: ubuntu:16.04
   echo "deb http://cran.r-project.org/bin/linux/ubuntu xenial-cran35/" > /etc/apt/sources.list.d/r.list
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
   apt-get update
-  apt-get install -y --no-install-recommends \
+  apt-get install -y --no-install-recommends --allow-unauthenticated \
     r-base=${R_VERSION}* \
     r-base-core=${R_VERSION}* \
     r-base-dev=${R_VERSION}* \

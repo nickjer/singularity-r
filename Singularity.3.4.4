@@ -32,9 +32,9 @@ From: ubuntu:16.04
 
   # Install R
   echo "deb http://cran.r-project.org/bin/linux/ubuntu xenial/" > /etc/apt/sources.list.d/r.list
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
   apt-get update
-  apt-get install -y --no-install-recommends --allow-unauthenticated \
+  apt-get install -y --no-install-recommends \
     r-base=${R_VERSION}* \
     r-base-core=${R_VERSION}* \
     r-base-dev=${R_VERSION}* \
@@ -45,7 +45,7 @@ From: ubuntu:16.04
     libssl-dev \
     libxml2-dev \
     libcairo2-dev \
-    libxt-dev \
+    libxt-dev
 
   # Add a default CRAN mirror
   echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')" >> /usr/lib/R/etc/Rprofile.site

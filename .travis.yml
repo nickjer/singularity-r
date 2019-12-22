@@ -6,8 +6,6 @@ env:
     - SINGULARITY_IMAGE=singularity-r.simg
   matrix:
     - SPEC=Singularity
-    - SPEC=Singularity.3.4.4
-    - SPEC=Singularity.3.5.3
     - SPEC=Singularity.3.6.2
 before_install:
   - sudo apt-get update -qq

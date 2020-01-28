@@ -32,7 +32,7 @@ From: ubuntu:16.04
 
   # Install R
   echo "deb http://cran.r-project.org/bin/linux/ubuntu xenial-cran35/" > /etc/apt/sources.list.d/r.list
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
   apt-get update
   apt-get install -y --no-install-recommends \
     r-base=${R_VERSION}* \

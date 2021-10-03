@@ -1,7 +1,6 @@
 # Singularity R
 
-[![Build Status](https://travis-ci.org/nickjer/singularity-r.svg?branch=master)](https://travis-ci.org/nickjer/singularity-r)
-[![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/462)
+[![Continuous Integration Status](https://github.com/nickjer/singularity-r/workflows/Continuous%20integration/badge.svg)](https://github.com/nickjer/namecheap-ddns/actions)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Singularity image for [R].
@@ -10,10 +9,10 @@ This is still a work in progress.
 
 ## Build
 
-You can build a local Singularity image named `singularity-r.simg` with:
+You can build a local Singularity image named `singularity-r.sif` with:
 
 ```sh
-sudo singularity build singularity-r.simg Singularity
+sudo singularity build singularity-r.sif singularity.def
 ```
 
 ## Deploy
@@ -22,7 +21,7 @@ Instead of building it yourself you can download the pre-built image from
 [Singularity Hub](https://www.singularity-hub.org) with:
 
 ```sh
-singularity pull --name singularity-r.simg shub://nickjer/singularity-r
+singularity pull singularity-r.sif library://nickjer/singularity-r
 ```
 
 ## Run
@@ -32,28 +31,28 @@ singularity pull --name singularity-r.simg shub://nickjer/singularity-r
 The `R` command is launched using the default run command:
 
 ```sh
-singularity run singularity-r.simg
+singularity run singularity-r.sif
 ```
 
 or as an explicit app:
 
 ```sh
-singularity run --app R singularity-r.simg
+singularity run --app R singularity-r.sif
 ```
 
 Example:
 
 ```console
-$ singularity run --app R singularity-r.simg --version
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Copyright (C) 2017 The R Foundation for Statistical Computing
+$ singularity run --app R singularity-r.sif --version
+R version 4.1.1 (2021-08-10) -- "Kick Things"
+Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
 GNU General Public License versions 2 or 3.
 For more information about these matters see
-http://www.gnu.org/licenses/.
+https://www.gnu.org/licenses/.
 ```
 
 ### Rscript
@@ -61,14 +60,14 @@ http://www.gnu.org/licenses/.
 The `Rscript` command is launched as an explicit app:
 
 ```sh
-singularity run --app Rscript singularity-r.simg
+singularity run --app Rscript singularity-r.sif
 ```
 
 Example:
 
 ```console
-$ singularity run --app Rscript singularity-r.simg --version
-R scripting front-end version 3.4.3 (2017-11-30)
+$ singularity run --app Rscript singularity-r.sif --version
+R scripting front-end version 4.1.1 (2021-08-10)
 ```
 
 ## Contributing

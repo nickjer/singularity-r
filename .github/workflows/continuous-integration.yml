@@ -1,0 +1,16 @@
+name: Continuous Integration
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/singularity/singularity:v3.8.3
+      options: "--privileged --workdir /data"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build singularity image...
+        run: |
+          singularity build singularity-r.sif singularity-r.def

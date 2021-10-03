@@ -1,6 +1,6 @@
 # Singularity R
 
-[![Continuous Integration Status](https://github.com/nickjer/singularity-r/workflows/Continuous%20integration/badge.svg)](https://github.com/nickjer/namecheap-ddns/actions)
+[![Continuous Integration Status](https://github.com/nickjer/singularity-r/workflows/Continuous%20integration/badge.svg)](https://github.com/nickjer/singularity-r/actions)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Singularity image for [R].

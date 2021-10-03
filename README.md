@@ -21,7 +21,7 @@ Instead of building it yourself you can download the pre-built image from
 [Singularity Hub](https://www.singularity-hub.org) with:
 
 ```sh
-singularity pull singularity-r.sif library://nickjer/singularity-r
+singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.1
 ```
 
 ## Run

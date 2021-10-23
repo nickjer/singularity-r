@@ -24,6 +24,12 @@ Instead of building it yourself you can download the pre-built image from
 singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.1
 ```
 
+> **WARNING:** This pre-built image comes with OpenBLAS installed using the
+> Debian binary packages. Be sure to run any tests with libraries that leverage
+> OpenBLAS in your enviroment. If you notice any odd results it may be best to
+> build this image from scratch on the machine you intend to run it on. See
+> instructions under the Build section above.
+
 ## Run
 
 ### R

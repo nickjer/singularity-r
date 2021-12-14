@@ -29,6 +29,15 @@ singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.1
 > OpenBLAS in your enviroment. If you notice any odd results it may be best to
 > build this image from scratch on the machine you intend to run it on. See
 > instructions under the Build section above.
+>
+> Or alternatively you can mount the locally installed OpenBLAS library into
+> the container using...
+>
+> ```sh
+> singularity run \
+>   --bind "/path/on/host/to/libopenblas.so:/usr/lib/R/lib/libblas.so.3" \
+>   singularity-r.sif
+> ```
 
 ## Run
 

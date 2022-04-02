@@ -21,7 +21,7 @@ Instead of building it yourself you can download the pre-built image from
 [Singularity Hub](https://www.singularity-hub.org) with:
 
 ```sh
-singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.1
+singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.3
 ```
 
 > **WARNING:** This pre-built image comes with OpenBLAS installed using the
@@ -59,7 +59,7 @@ Example:
 
 ```console
 $ singularity run --app R singularity-r.sif --version
-R version 4.1.1 (2021-08-10) -- "Kick Things"
+R version 4.1.3 (2021-08-10) -- "Kick Things"
 Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -82,7 +82,7 @@ Example:
 
 ```console
 $ singularity run --app Rscript singularity-r.sif --version
-R scripting front-end version 4.1.1 (2021-08-10)
+R scripting front-end version 4.1.3 (2021-08-10)
 ```
 
 ## Contributing

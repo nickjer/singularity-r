@@ -3,7 +3,7 @@ From: ubuntu:20.04
 
 %labels
   Maintainer Jeremy Nicklas
-  R_Version 4.1.1
+  R_Version 4.1.3
 
 %apprun R
   exec R "${@}"
@@ -16,7 +16,7 @@ From: ubuntu:20.04
 
 %post
   # Software versions
-  export R_VERSION=4.1.1
+  export R_VERSION=4.1.3
   echo "export R_VERSION=${R_VERSION}" >> $SINGULARITY_ENVIRONMENT
 
   # Get dependencies

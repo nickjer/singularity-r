@@ -17,8 +17,8 @@ sudo singularity build singularity-r.sif singularity.def
 
 ## Deploy
 
-Instead of building it yourself you can download the pre-built image from
-[Singularity Hub](https://www.singularity-hub.org) with:
+Instead of building it yourself you can download the pre-built image from the
+[Cloud Library](https://cloud.sylabs.io/library) with:
 
 ```sh
 singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.3

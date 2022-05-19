@@ -12,7 +12,7 @@ This is still a work in progress.
 You can build a local Singularity image named `singularity-r.sif` with:
 
 ```sh
-sudo singularity build singularity-r.sif singularity.def
+sudo singularity build singularity-r.sif singularity-r.def
 ```
 
 ## Deploy
@@ -21,7 +21,7 @@ Instead of building it yourself you can download the pre-built image from the
 [Cloud Library](https://cloud.sylabs.io/library) with:
 
 ```sh
-singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.1.3
+singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.2.0
 ```
 
 > **WARNING:** This pre-built image comes with OpenBLAS installed using the
@@ -59,8 +59,8 @@ Example:
 
 ```console
 $ singularity run --app R singularity-r.sif --version
-R version 4.1.3 (2021-08-10) -- "Kick Things"
-Copyright (C) 2021 The R Foundation for Statistical Computing
+R version 4.2.0 (2022-04-22) -- "Vigorous Calisthenics"
+Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -82,7 +82,7 @@ Example:
 
 ```console
 $ singularity run --app Rscript singularity-r.sif --version
-R scripting front-end version 4.1.3 (2021-08-10)
+Rscript (R) version 4.2.0 (2022-04-22)
 ```
 
 ## Contributing

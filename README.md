@@ -21,7 +21,7 @@ Instead of building it yourself you can download the pre-built image from the
 [Cloud Library](https://cloud.sylabs.io/library) with:
 
 ```sh
-singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.2.0
+singularity pull singularity-r.sif library://nickjer/default/singularity-r:4.2.1
 ```
 
 > **WARNING:** This pre-built image comes with OpenBLAS installed using the
@@ -59,15 +59,7 @@ Example:
 
 ```console
 $ singularity run --app R singularity-r.sif --version
-R version 4.2.0 (2022-04-22) -- "Vigorous Calisthenics"
-Copyright (C) 2022 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under the terms of the
-GNU General Public License versions 2 or 3.
-For more information about these matters see
-https://www.gnu.org/licenses/.
+...
 ```
 
 ### Rscript
@@ -82,7 +74,7 @@ Example:
 
 ```console
 $ singularity run --app Rscript singularity-r.sif --version
-Rscript (R) version 4.2.0 (2022-04-22)
+...
 ```
 
 ## Contributing
